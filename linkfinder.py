@@ -28,7 +28,7 @@ except ImportError:
 # Regex used
 regex_str = r"""
 
-  (?:"|')                               # Start newline delimiter
+  (?:`|"|')                               # Start newline delimiter
 
   (
     ((?:[a-zA-Z]{1,10}://|//)           # Match a scheme [a-Z]*1-10 or //
@@ -63,7 +63,7 @@ regex_str = r"""
 
   )
 
-  (?:"|')                               # End newline delimiter
+  (?:`|"|')                               # End newline delimiter
 
 """
 
